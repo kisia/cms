@@ -7,15 +7,16 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Manage Page</title>
 
     <!-- Styles -->
     <link href="{{ asset('public/css/app.css') }}" rel="stylesheet">
     @yield('styles')
 </head>
 <body>
+    @include('_includes.nav.main')
+    @include('_includes.nav.manage')
     <div id="app">
-        @include('_includes.nav.main')
         @yield('content')
     </div>
     <!-- Scripts -->
