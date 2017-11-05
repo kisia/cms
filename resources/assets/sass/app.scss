@@ -11,3 +11,8 @@
 
 //bulma vuew moduels
 @import "node_modules/buefy/src/scss/buefy";
+
+//custome sass style
+@import "overrides";
+@import "helpers";
+@import "styles";
